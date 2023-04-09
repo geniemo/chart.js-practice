@@ -1,11 +1,14 @@
-import { BrowserRouter, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import MyLine from "./pages/MyLine";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Routes></Routes>
+        <Routes>
+          <Route path="/line" element={<MyLine />} />
+        </Routes>
       </div>
     </BrowserRouter>
   );

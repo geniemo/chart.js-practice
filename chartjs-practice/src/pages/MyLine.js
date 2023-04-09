@@ -64,7 +64,7 @@ const MyLine = () => {
     ],
   };
   return (
-    <div className="MyLine">
+    <div className="MyLine" style={{ width: "50%" }}>
       <Line options={options} data={data} />
     </div>
   );
